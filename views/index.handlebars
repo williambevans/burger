@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            	<img src="/assets/img/Screen Shot 2019-03-21 at 2.36.17 PM.png" width="900px" id="eater">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Burgers To Eat</h2>
+                {{#each burgers}}
+                    <p>{{this.id}}</p>
+                    <p>{{this.burger_name}}</p>
+                    <button class="delete-burger" data-id="{{this.id}}">DEVOUR!</button>
+                {{/each}}
+        </div>
+        <div class="col-md-4">
+            <h2>Eat Da Burger</h2>
+            <form class="create-form">
+                <textarea type="text" name="task"></textarea>
+            </form>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="col-md-4">
+            <h2>Burgers Eaten</h2>
+        </div>
+    </div>
+</div>
